@@ -1,12 +1,15 @@
+// base styles
 @import "./base/reset";
 @import "./base/variables";
 
+//Organisms
+@import "./organisms/header";
+@import "./organisms/header";
 
 html {
     font-size: 62.5%;
     width: 428px;
 }
-
 
 body{
     font-family: $font-main;

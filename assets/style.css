@@ -52,6 +52,62 @@ table {
   border-spacing: 0;
 }
 
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.2rem;
+  width: 36.4rem;
+  height: 3.6rem;
+}
+
+.menu-line1, .menu-line3, .menu-line2 {
+  position: absolute;
+  width: 2.4rem;
+  height: 0.4rem;
+  background: #999999;
+  border-radius: 0.3rem;
+  left: 37.2rem;
+  top: 4.1rem;
+}
+
+.menu-line2 {
+  left: 37.2rem;
+  top: 5rem;
+}
+
+.menu-line3 {
+  left: 37.2rem;
+  top: 5.9rem;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.2rem;
+  width: 36.4rem;
+  height: 3.6rem;
+}
+
+.menu-line1, .menu-line2, .menu-line3 {
+  position: absolute;
+  width: 2.4rem;
+  height: 0.4rem;
+  background: #999999;
+  border-radius: 0.3rem;
+  left: 37.2rem;
+  top: 4.1rem;
+}
+
+.menu-line2 {
+  left: 37.2rem;
+  top: 5rem;
+}
+
+.menu-line3 {
+  left: 37.2rem;
+  top: 5.9rem;
+}
+
 html {
   font-size: 62.5%;
   width: 428px;
