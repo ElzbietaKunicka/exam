@@ -1,0 +1,15 @@
+@import "./base/reset";
+@import "./base/variables";
+
+
+html {
+    font-size: 62.5%;
+    width: 428px;
+}
+
+
+body{
+    font-family: $font-main;
+    color: $color-light1;
+    font-size: 1.6rem; 
+}
