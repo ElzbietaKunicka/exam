@@ -4,15 +4,22 @@
 
 //Organisms
 @import "./organisms/header";
-@import "./organisms/header";
+@import "./organisms/hero";
+
+//atoms
+@import "./organisms/atoms/button";
+@import "./organisms/atoms/image";
 
 html {
     font-size: 62.5%;
-    width: 428px;
 }
 
 body{
     font-family: $font-main;
     color: $color-light1;
     font-size: 1.6rem; 
+    width: 428px;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
 }

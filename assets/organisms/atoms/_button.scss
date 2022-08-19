@@ -1,0 +1,39 @@
+.btn span {
+    align-items: center;
+    background: $color-light1 ;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn {
+  background-image: linear-gradient(68deg, #FF3939 10% , #FF3998 20% , #FF8139 30% , #39FFA0 230%, #FF8139 30%);
+	border-radius: 40px;
+  box-sizing: border-box;
+	color: $color-dark1;
+	display: block;
+  font-size: 2rem;
+  font-family: $font-main;
+  font-weight: 600;
+	height: 75px;
+	margin-top: 3.2rem;
+	padding: 4px;
+	position: relative;
+  text-decoration: none;
+	width: 188px;
+	z-index: 2;
+}
+  
+
+
+
+
+
+
+
+
+
+ 

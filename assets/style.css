@@ -55,9 +55,7 @@ table {
 .header_wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 3.2rem;
   width: 36.4rem;
-  height: 3.6rem;
 }
 
 .menu-line1, .menu-line3, .menu-line2 {
@@ -71,50 +69,120 @@ table {
 }
 
 .menu-line2 {
-  left: 37.2rem;
   top: 5rem;
 }
 
 .menu-line3 {
-  left: 37.2rem;
   top: 5.9rem;
 }
 
-.header_wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 3.2rem;
-  width: 36.4rem;
-  height: 3.6rem;
+.hero {
+  height: 448px;
+  width: 396px;
+  padding-top: 42px;
 }
 
-.menu-line1, .menu-line2, .menu-line3 {
+.hero-text {
+  width: 274px;
+  height: 410px;
+  padding-top: 38px;
   position: absolute;
-  width: 2.4rem;
-  height: 0.4rem;
-  background: #999999;
-  border-radius: 0.3rem;
-  left: 37.2rem;
-  top: 4.1rem;
 }
 
-.menu-line2 {
-  left: 37.2rem;
-  top: 5rem;
+.launching_soon {
+  width: 169px;
+  height: 19px;
+  color: #FF3998;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.menu-line3 {
-  left: 37.2rem;
-  top: 5.9rem;
+.hero_heading {
+  font-weight: 900;
+  color: #111111;
+  width: 27.4rem;
+  height: 13.8rem;
+  font-size: 4.8rem;
+  text-align: left;
+  margin-top: 2.2rem;
+  line-height: 120%;
+}
+
+.hero_paragraf {
+  color: #555555;
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 400;
+  text-align: left;
+}
+
+.btn span {
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.btn {
+  background-image: linear-gradient(68deg, #FF3939 10%, #FF3998 20%, #FF8139 30%, #39FFA0 230%, #FF8139 30%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #111111;
+  display: block;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  height: 75px;
+  margin-top: 3.2rem;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 188px;
+  z-index: 2;
+}
+
+.graphic img {
+  width: 102px;
+  height: 278px;
+  overflow: visible;
+  float: right;
+  position: relative;
+}
+
+.shadow_orange {
+  width: 166.86px;
+  height: 166.86px;
+  position: fixed;
+  top: 50px;
+  left: 38px;
+  opacity: 0.4;
+}
+
+.shadow_pink {
+  width: 116.05px;
+  height: 116.05px;
+  position: fixed;
+  top: 8rem;
+  left: 20.4rem;
+  opacity: 0.7;
 }
 
 html {
   font-size: 62.5%;
-  width: 428px;
 }
 
 body {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   font-size: 1.6rem;
+  width: 428px;
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
 }/*# sourceMappingURL=style.css.map */

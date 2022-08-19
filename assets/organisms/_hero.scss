@@ -1,0 +1,42 @@
+.hero {
+    height: 448px;
+    width: 396px;
+    padding-top: 42px;
+}
+
+.hero-text {
+    width: 274px;
+    height: 410px;
+    padding-top: 38px;
+    position: absolute;
+}
+.launching_soon {
+    width: 169px;
+    height: 19px;
+    color: $color-pink;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.hero_heading {
+    font-weight: 900;
+    color: $color-dark1;
+    width: 27.4rem;
+    height: 13.8rem;
+    font-size: 4.8rem;
+    text-align: left;
+    margin-top: 2.2rem;
+    line-height: 120%;  
+}
+
+.hero_paragraf {
+    color: $color-dark2;
+    font-size: 2rem;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: left;
+
+}

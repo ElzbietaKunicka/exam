@@ -1,10 +1,8 @@
 
 .header_wrapper {
     display: flex;
-    justify-content: space-between;
-    margin: 3.2rem;
+    justify-content: space-between; 
     width: 36.4rem;
-    height: 3.6rem;
 }
 
 //menu line
@@ -20,13 +18,11 @@
     
 .menu-line2 {
     @extend .menu-line1;
-        left: 37.2rem;
         top: 5rem;
     }
     
 .menu-line3 {
     @extend .menu-line1; 
-        left: 37.2rem;
         top: 5.9rem;
     }
 
