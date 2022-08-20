@@ -5,6 +5,7 @@
 //Organisms
 @import "./organisms/header";
 @import "./organisms/hero";
+@import "./organisms/upsell";
 
 //atoms
 @import "./organisms/atoms/button";
@@ -20,6 +21,5 @@ body{
     font-size: 1.6rem; 
     width: 428px;
     margin-top: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
+    
 }

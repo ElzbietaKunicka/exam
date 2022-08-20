@@ -1,0 +1,40 @@
+.upsell {
+    padding-left: 0px;
+    margin-left: 0px;
+    height: 32.6rem;
+    width: 428px;
+    background: url(/background.svg);
+    background-size: cover;
+    background-origin: content-box;
+    background-position: -600px 0px;
+    background-clip: border-box;
+    top: 63.8rem;
+    position: fixed;
+
+}
+
+.upsell_text {
+    height: 172px;
+    padding-top: 120px;  
+}
+
+h2{
+    color: $color-dark1;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.8rem;
+    height: 96px;
+    width: 36.4rem;
+    @extend header
+}
+
+.upsell_paragraf {
+    color: $color-dark1;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    width: 36.4rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    @extend header
+}
