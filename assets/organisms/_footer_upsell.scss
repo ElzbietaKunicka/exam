@@ -1,0 +1,48 @@
+.footer-upsell {
+    padding-top: 6.4rem;
+    height: 63rem;
+    width: 396px;
+    padding-left: 32px;
+    position: relative;
+    padding-bottom: 82px;
+    
+}
+
+.ft_img {
+    width: 230px;
+    height: 428px;
+    position: relative;
+    right: 0px;
+    bottom: 2px;
+    overflow: hidden;
+}
+
+.footer_upsell-text {
+    @extend .hero-text;
+    height: 498px;
+    width: 20.7rem;
+    padding-top: 0px;
+}
+
+.next_div {
+    background-color: $color-light2;
+    height: 2px;
+    width: 428px;
+    margin-top: 30px;
+    
+}
+
+.ft_img {
+    width: 628px;
+    height: 486px;
+    position: relative;
+    left: 220px;
+    top: 72px;
+    overflow: hidden;
+}
+
+.ft_upsell_heading{
+    @extend .hero_heading;
+    padding-bottom: 50px;
+    
+}

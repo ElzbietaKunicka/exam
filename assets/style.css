@@ -91,7 +91,7 @@ header, .showcase_text .paragraf, .press, .upsell .paragraf, h2 {
   padding-bottom: 82px;
 }
 
-.hero-text {
+.hero-text, .footer_upsell-text {
   height: 41rem;
   width: 274px;
   padding-top: 38px;
@@ -110,7 +110,7 @@ header, .showcase_text .paragraf, .press, .upsell .paragraf, h2 {
 }
 
 /*width: 27.4rem; */
-.hero_heading {
+.hero_heading, .ft_upsell_heading {
   font-weight: 900;
   color: #111111;
   height: 13.8rem;
@@ -283,6 +283,57 @@ span {
   position: relative;
   touch-action: auto;
   gap: 1.2rem;
+}
+
+.footer-upsell {
+  padding-top: 6.4rem;
+  height: 63rem;
+  width: 396px;
+  padding-left: 32px;
+  position: relative;
+  padding-bottom: 82px;
+}
+
+.ft_img {
+  width: 230px;
+  height: 428px;
+  position: relative;
+  right: 0px;
+  bottom: 2px;
+  overflow: hidden;
+}
+
+.footer_upsell-text {
+  height: 498px;
+  width: 20.7rem;
+  padding-top: 0px;
+}
+
+.next_div {
+  background-color: #EEEEEE;
+  height: 2px;
+  width: 428px;
+  margin-top: 30px;
+}
+
+.ft_img {
+  width: 628px;
+  height: 486px;
+  position: relative;
+  left: 220px;
+  top: 72px;
+  overflow: hidden;
+}
+
+.ft_upsell_heading {
+  padding-bottom: 50px;
+}
+
+.divider {
+  background-color: #EEEEEE;
+  width: 2px;
+  width: 428px;
+  margin-top: 90px;
 }
 
 .btn span {
