@@ -6,20 +6,22 @@
 @import "./organisms/header";
 @import "./organisms/hero";
 @import "./organisms/upsell";
+@import "./organisms/press";
 
 //atoms
 @import "./organisms/atoms/button";
 @import "./organisms/atoms/image";
+@import "./organisms/atoms/";
+
 
 html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: $font-main;
     color: $color-light1;
     font-size: 1.6rem; 
     width: 428px;
-    margin-top: 32px;
-    
+    margin-top: 32px;   
 }

@@ -88,13 +88,15 @@ header, .upsell_paragraf, h2 {
   width: 396px;
   padding-left: 32px;
   position: relative;
+  padding-bottom: 82px;
 }
 
 .hero-text {
   height: 41rem;
   width: 274px;
   padding-top: 38px;
-  position: fixed;
+  position: absolute;
+  top: 50px;
 }
 
 .launching_soon {
@@ -126,18 +128,25 @@ header, .upsell_paragraf, h2 {
   text-align: left;
 }
 
+.graphic img {
+  width: 230px;
+  height: 428px;
+  position: relative;
+  left: 170px;
+  top: -53px;
+  overflow: hidden;
+}
+
 .upsell {
   padding-left: 0px;
   margin-left: 0px;
   height: 32.6rem;
   width: 428px;
   background: url(/background.svg);
-  background-size: cover;
   background-origin: content-box;
   background-position: -600px 0px;
   background-clip: border-box;
-  top: 63.8rem;
-  position: fixed;
+  position: relative;
 }
 
 .upsell_text {
@@ -163,6 +172,8 @@ h2 {
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
+
+
 
 .btn span {
   align-items: center;
@@ -191,32 +202,6 @@ h2 {
   text-decoration: none;
   width: 188px;
   z-index: 2;
-}
-
-.graphic img {
-  width: 102px;
-  height: 278px;
-  overflow: visible;
-  float: right;
-  position: relative;
-}
-
-.shadow_orange {
-  width: 166.86px;
-  height: 166.86px;
-  position: relative;
-  top: 50px;
-  left: 38px;
-  opacity: 0.4;
-}
-
-.shadow_pink {
-  width: 116.05px;
-  height: 116.05px;
-  position: relative;
-  top: 8rem;
-  left: 20.4rem;
-  opacity: 0.7;
 }
 
 html {

@@ -4,13 +4,15 @@
     width: 396px;
     padding-left: 32px;
     position: relative;
+    padding-bottom: 82px;
 }
 
 .hero-text {
     height: 41rem;
     width: 274px;
     padding-top: 38px;
-    position: fixed;
+    position: absolute;
+    top: 50px;
 }
 .launching_soon {
     width: 16.9rem;
@@ -19,9 +21,7 @@
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    text-align: center;
-
-    
+    text-align: center; 
 }
 /*width: 27.4rem; */
 .hero_heading {
@@ -42,3 +42,14 @@
     text-align: left;
 
 }
+
+.graphic img {
+    width: 230px;
+    height: 428px;
+    position: relative;
+    left: 170px;
+    top: -53px;
+    overflow: hidden;
+}
+
+

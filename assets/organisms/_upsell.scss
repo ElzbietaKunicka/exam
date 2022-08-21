@@ -4,12 +4,10 @@
     height: 32.6rem;
     width: 428px;
     background: url(/background.svg);
-    background-size: cover;
     background-origin: content-box;
     background-position: -600px 0px;
     background-clip: border-box;
-    top: 63.8rem;
-    position: fixed;
+    position: relative;
 
 }
 
@@ -18,7 +16,7 @@
     padding-top: 120px;  
 }
 
-h2{
+h2 {
     color: $color-dark1;
     font-size: 4rem;
     font-weight: 500;
@@ -38,3 +36,5 @@ h2{
     padding-top: 2rem;
     @extend header
 }
+
+
