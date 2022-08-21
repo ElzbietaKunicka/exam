@@ -2,18 +2,17 @@
     padding-left: 0px;
     margin-left: 0px;
     height: 32.6rem;
-    width: 428px;
+    width: 42.8rem;
     background: url(/assets/organisms/atoms/background.svg);
     background-origin: content-box;
-    background-position: -600px 0px;
+    background-position: -60rem 0px;
     background-clip: border-box;
     position: relative;
-
 }
 
 .upsell_text {
-    height: 172px;
-    padding-top: 120px;  
+    height: 17.2rem;
+    padding-top: 12rem;  
 }
 
 h2 {
@@ -21,9 +20,9 @@ h2 {
     font-size: 4rem;
     font-weight: 500;
     line-height: 4.8rem;
-    height: 96px;
+    height: 9.6rem;
     width: 36.4rem;
-    @extend header
+    @extend header;
 }
 
 .upsell .paragraf {

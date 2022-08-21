@@ -3,15 +3,15 @@
     width: 36.4rem;
     height: 11.7rem;
     position: relative;
-    padding-bottom: 56px;
-    @extend header
+    padding-bottom: 5.6rem;
+    @extend header;
 }
 
 .companies {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
-    gap: 25px;
+    gap: 2.5rem;
 }
 
 .companies:nth-child(1) {
