@@ -1,0 +1,75 @@
+//section text
+.showcase_text .paragraf {
+    @extend .paragraf;
+    @extend header;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+span {
+    text-decoration: underline;
+}
+// card
+.card {
+    min-width: 29rem;
+    max-height: 40rem;
+    text-align: center;
+    padding-left: 3.2rem;  
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    background-color: $color-light2;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.left {
+    text-align: left;  
+}
+.right {
+    text-align: right;  
+}
+
+.small_text {
+    font-size: 1.2rem;
+    color: $color-dark3;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.orange {
+    color: $color-orange;
+}
+
+.NFT_name {
+    font-weight: 500;
+    font-size: 2rem;
+    color: $color-dark1;
+}
+
+.NFT_id {
+    color: $color-dark3;
+    font-size: 1.8rem;
+}
+
+//slide
+.slide_card {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    touch-action: auto;
+    gap: 1.2rem;
+}

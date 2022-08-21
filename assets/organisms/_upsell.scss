@@ -3,7 +3,7 @@
     margin-left: 0px;
     height: 32.6rem;
     width: 428px;
-    background: url(/background.svg);
+    background: url(/assets/organisms/atoms/background.svg);
     background-origin: content-box;
     background-position: -600px 0px;
     background-clip: border-box;
@@ -26,15 +26,12 @@ h2 {
     @extend header
 }
 
-.upsell_paragraf {
-    color: $color-dark1;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 150%;
+.upsell .paragraf {
     width: 36.4rem;
     padding-bottom: 3rem;
     padding-top: 2rem;
-    @extend header
+    @extend .paragraf;
+    @extend header;
 }
 
 

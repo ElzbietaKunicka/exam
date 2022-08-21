@@ -2,8 +2,9 @@
     padding-top: 6.4rem;
     width: 36.4rem;
     height: 11.7rem;
-    position: absolute;
+    position: relative;
     padding-bottom: 56px;
+    @extend header
 }
 
 .companies {

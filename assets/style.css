@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, .press, .upsell_paragraf, hgroup,
+figure, figcaption, footer, header, .showcase_text .paragraf, .press, .upsell .paragraf, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, .press, .upsell_paragraf, h2, hgroup, menu, nav, section {
+footer, header, .showcase_text .paragraf, .press, .upsell .paragraf, h2, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-header, .press, .upsell_paragraf, h2 {
+header, .showcase_text .paragraf, .press, .upsell .paragraf, h2 {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   width: 39.6rem;
@@ -120,7 +120,7 @@ header, .press, .upsell_paragraf, h2 {
   line-height: 120%;
 }
 
-.hero_paragraf {
+.paragraf, .showcase_text .paragraf, .upsell .paragraf {
   color: #555555;
   font-size: 2rem;
   line-height: 150%;
@@ -142,7 +142,7 @@ header, .press, .upsell_paragraf, h2 {
   margin-left: 0px;
   height: 32.6rem;
   width: 428px;
-  background: url(/background.svg);
+  background: url(/assets/organisms/atoms/background.svg);
   background-origin: content-box;
   background-position: -600px 0px;
   background-clip: border-box;
@@ -163,11 +163,7 @@ h2 {
   width: 36.4rem;
 }
 
-.upsell_paragraf {
-  color: #111111;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 150%;
+.upsell .paragraf {
   width: 36.4rem;
   padding-bottom: 3rem;
   padding-top: 2rem;
@@ -177,7 +173,7 @@ h2 {
   padding-top: 6.4rem;
   width: 36.4rem;
   height: 11.7rem;
-  position: absolute;
+  position: relative;
   padding-bottom: 56px;
 }
 
@@ -216,6 +212,78 @@ h2 {
   grid-row-end: 3;
 }
 
+.showcase_text .paragraf {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.card {
+  min-width: 29rem;
+  max-height: 40rem;
+  text-align: center;
+  padding-left: 3.2rem;
+}
+
+.card_info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+  background-color: #EEEEEE;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.small_text {
+  font-size: 1.2rem;
+  color: #777777;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.orange {
+  color: #FF8139;
+}
+
+.NFT_name {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #111111;
+}
+
+.NFT_id {
+  color: #777777;
+  font-size: 1.8rem;
+}
+
+.slide_card {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  touch-action: auto;
+  gap: 1.2rem;
+}
 
 .btn span {
   align-items: center;
@@ -256,6 +324,4 @@ body {
   font-size: 1.6rem;
   width: 428px;
   margin-top: 32px;
-
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
