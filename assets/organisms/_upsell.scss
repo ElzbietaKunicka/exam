@@ -1,77 +1,42 @@
 .upsell {
-    padding-left: 0px;
-    margin-left: 0px;
-    height: 32.6rem;
-    width: 76.7rem;
-    background: url(/assets/organisms/atoms/background.svg);
-    background-origin: content-box;
-    background-position: -60rem 0px;
-    background-clip: border-box;
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
+    background-color: $color-red;
+    background-image: linear-gradient(65deg, #FF3998, #FF3939, #FF8139, #39FFA0);
+    background-size: cover;
 }
 
 .upsell_text {
-    height: 17.2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
     padding-top: 12rem;  
 }
 
-h2 {
+.upsell_heading {
     color: $color-dark1;
     font-size: 4rem;
     font-weight: 500;
     line-height: 4.8rem;
-    height: 9.6rem;
-    width: 36.4rem;
-    @extend header;
+    padding-bottom: 3rem;
 }
 
-.upsell .paragraf {
-    width: 36.4rem;
+.upsell_text .paragraf {
     padding-bottom: 3rem;
-    padding-top: 2rem;
     @extend .paragraf;
-    @extend header;
 }
 @media screen and (min-width: 768px) {
     .upsell {
-        height: 172px;
-        background-repeat: no-repeat;
-        width: 100%;
-        background-size: cover;
-        padding-top: 1rem;
-        margin-left: 3.2rem;
-        border-radius: 1rem;
-    
+        border-radius: 1.6rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        background-size: contain;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
     }
     .upsell_text {
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 25% 25% 25% 25%;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        text-align: left;
     }
-    h2 {
-        font-size: 2rem;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        width: 60%;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        height: auto;
-        
-    }
-    .paragraf {
-        position: relative;
-        font-size: 1rem;
-        width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        padding-bottom: 0rem;
-        padding-top: 0rem;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-
 }   
 
