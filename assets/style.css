@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, .press, hgroup,
+figure, figcaption, footer, header, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, .press, hgroup, menu, nav, section {
+footer, header, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, .press {
+header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
@@ -100,7 +100,7 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
 }
 
 @media screen and (min-width: 768px) {
-  header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, .press {
+  header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a {
     padding-left: 8rem;
     padding-right: 8rem;
   }
@@ -245,19 +245,20 @@ img {
 }
 .press {
   padding-top: 6.4rem;
-  width: 36.4rem;
-  height: 11.7rem;
-  position: relative;
   padding-bottom: 5.6rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
 }
 
 .companies {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  align-items: center;
 }
 
 .companies:nth-child(1) {
+  width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -265,6 +266,7 @@ img {
 }
 
 .companies:nth-child(2) {
+  width: 100%;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -272,6 +274,7 @@ img {
 }
 
 .companies:nth-child(3) {
+  width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -279,12 +282,34 @@ img {
 }
 
 .companies:nth-child(4) {
+  width: 100%;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
+.hidden img {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .companies {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .comp_Desk {
+    width: 100%;
+  }
+  .hidde img {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+}
 .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a {
   padding-top: 2rem;
   padding-bottom: 4rem;

@@ -1,26 +1,26 @@
 .press {
     padding-top: 6.4rem;
-    width: 36.4rem;
-    height: 11.7rem;
-    position: relative;
     padding-bottom: 5.6rem;
-    @extend header;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
 }
 
 .companies {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    
+    align-items: center;
 }
 
 .companies:nth-child(1) {
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 .companies:nth-child(2) {
+    width: 100%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -28,15 +28,39 @@
 }
 
 .companies:nth-child(3) {
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 3;
-    
+    grid-row-end: 3;   
 }
 .companies:nth-child(4) {
+    width: 100%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+.hidden img{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .companies {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .comp_Desk{
+        width: 100%;
+    }
+    
+    .hidde img{
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+    
+
 }
