@@ -60,109 +60,114 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
 .header_wrapper_mobile {
   display: flex;
   justify-content: space-between;
-  height: 3.6rem;
-}
-
-.menu-line1, .menu-line3, .menu-line2 {
-  position: absolute;
-  width: 2.4rem;
-  height: 0.4rem;
-  background: #999999;
-  border-radius: 0.3rem;
-  left: 36rem;
-  top: 4.1rem;
-}
-
-.menu-line2 {
-  top: 5rem;
-}
-
-.menu-line3 {
-  top: 5.9rem;
+  align-items: center;
 }
 
 .nav_links a {
   color: #555555;
   text-decoration: none;
-  font-size: 0.7rem;
 }
 
 .link_one span {
   color: #FF3998;
   text-decoration: none;
-  font-size: 0.7rem;
 }
 
 .nav_links {
   overflow: hidden;
   height: 0;
+  width: 0;
   display: flex;
   gap: 1rem;
 }
 
+.right_side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-line1, .menu-line3, .menu-line2 {
+  width: 2.4rem;
+  height: 0.4rem;
+  background: #999999;
+  border-radius: 0.3rem;
+}
+
 @media screen and (min-width: 768px) {
+  header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, .press, .upsell .paragraf, .upsell .copyright, .upsell .footer_links a, .footer_links .upsell a, h2 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
   .menu-line1, .menu-line2, .menu-line3 {
     overflow: hidden;
     height: 0;
+    width: 0;
+  }
+  .menu-line2 {
+    overflow: hidden;
+    height: 0;
+    width: 0;
+  }
+  .menu-line3 {
+    overflow: hidden;
+    height: 0;
+    width: 0;
   }
   .nav_links {
     overflow: hidden;
-    height: 20px;
-    width: 20px;
-    align-items: flex-start;
-  }
-  .image_conteiner {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    gap: 15rem;
-    align-items: flex-start;
-  }
-  .header_image {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    height: auto;
+    display: flex;
     width: 100%;
-  }
-  .nav_links {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 100%;
+    align-items: center;
   }
 }
 .hero {
-  height: 44.8rem;
-  padding-top: 4.2rem;
-  width: 39.6rem;
   padding-left: 3.2rem;
-  position: relative;
-  padding-bottom: 8.2rem;
+  padding-bottom: 2.4rem;
+  display: grid;
+  grid-template-columns: 69% 31%;
+  justify-content: flex-start;
 }
 
 .hero-text, .footer_upsell-text {
-  height: 41rem;
-  width: 27.4rem;
-  padding-top: 3.8rem;
-  position: absolute;
-  top: 5rem;
+  width: 100%;
+  padding-top: 8rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.graphic {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-left: 0rem;
+  height: 55rem;
+  align-self: flex-end;
 }
 
 .launching_soon {
-  width: 16.9rem;
-  height: 1.9rem;
   color: #FF3998;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 /*width: 27.4rem; */
 .hero_heading, .ft_upsell_heading {
   font-weight: 900;
   color: #111111;
-  height: 13.8rem;
   font-size: 4.8rem;
   text-align: left;
-  margin-top: 2.2rem;
+  padding-top: 3rem;
   line-height: 120%;
 }
 
@@ -172,27 +177,38 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
   line-height: 150%;
   font-weight: 400;
   text-align: left;
+  padding-top: 3.4rem;
 }
 
-.graphic img {
-  width: 230px;
-  height: 428px;
-  position: relative;
-  left: 170px;
-  top: -53px;
-  overflow: hidden;
+@media screen and (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .hero-text, .footer_upsell-text {
+    width: 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .graphic {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 50%;
+    height: 428px;
+  }
 }
-
 .upsell {
   padding-left: 0px;
   margin-left: 0px;
   height: 32.6rem;
-  width: 42.8rem;
+  width: 76.7rem;
   background: url(/assets/organisms/atoms/background.svg);
   background-origin: content-box;
   background-position: -60rem 0px;
   background-clip: border-box;
   position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .upsell_text {
@@ -215,6 +231,43 @@ h2 {
   padding-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .upsell {
+    height: 172px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-top: 1rem;
+    margin-left: 3.2rem;
+    border-radius: 1rem;
+  }
+  .upsell_text {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  h2 {
+    font-size: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 60%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: auto;
+  }
+  .paragraf, .copyright, .upsell .copyright, .showcase_text .copyright, .footer_links a, .upsell .footer_links a, .footer_links .upsell a, .showcase_text .footer_links a, .footer_links .showcase_text a, .showcase_text .paragraf, .upsell .paragraf {
+    position: relative;
+    font-size: 1rem;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
 .press {
   padding-top: 6.4rem;
   width: 36.4rem;
@@ -226,8 +279,7 @@ h2 {
 .companies {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr;
-  gap: 2.5rem;
+  grid-template-rows: 50% 50%;
 }
 
 .companies:nth-child(1) {

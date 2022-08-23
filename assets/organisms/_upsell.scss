@@ -2,12 +2,14 @@
     padding-left: 0px;
     margin-left: 0px;
     height: 32.6rem;
-    width: 42.8rem;
+    width: 76.7rem;
     background: url(/assets/organisms/atoms/background.svg);
     background-origin: content-box;
     background-position: -60rem 0px;
     background-clip: border-box;
     position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 .upsell_text {
@@ -32,5 +34,44 @@ h2 {
     @extend .paragraf;
     @extend header;
 }
+@media screen and (min-width: 768px) {
+    .upsell {
+        height: 172px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        padding-top: 1rem;
+        margin-left: 3.2rem;
+        border-radius: 1rem;
+    
+    }
+    .upsell_text {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    h2 {
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 60%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: auto;
+        
+    }
+    .paragraf {
+        position: relative;
+        font-size: 1rem;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
 
+}   
 

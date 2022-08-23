@@ -1,36 +1,43 @@
 .hero {
-    height: 44.8rem;
-    padding-top: 4.2rem;
-    width: 39.6rem;
     padding-left: 3.2rem;
-    position: relative;
-    padding-bottom: 8.2rem;
+    padding-bottom: 2.4rem;
+    display: grid;
+    grid-template-columns: 69% 31%;
+    justify-content: flex-start;
 }
 
 .hero-text {
-    height: 41rem;
-    width: 27.4rem;
-    padding-top: 3.8rem;
-    position: absolute;
-    top: 5rem;
+    width: 100%;
+    padding-top: 8rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
+.graphic{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    overflow: hidden;
+    position: sticky;
+    padding-left: 0rem;
+    height: 55rem;
+    align-self: flex-end;
+   
+}
+
 .launching_soon {
-    width: 16.9rem;
-    height: 1.9rem;
     color: $color-pink;
     font-weight: 700;
     letter-spacing: 1.4px;
-    text-transform: uppercase;
-    text-align: center; 
+    text-transform: uppercase;  
 }
 /*width: 27.4rem; */
 .hero_heading {
     font-weight: 900;
     color: $color-dark1;
-    height: 13.8rem;
+    
     font-size: 4.8rem;
     text-align: left;
-    margin-top: 2.2rem;
+    padding-top: 3rem;
     line-height: 120%; 
 }
 
@@ -40,16 +47,28 @@
     line-height: 150%;
     font-weight: 400;
     text-align: left;
+    padding-top: 3.4rem;
 
 }
 
-.graphic img {
-    width: 230px;
-    height: 428px;
-    position: relative;
-    left: 170px;
-    top: -53px;
-    overflow: hidden;
+@media screen and (min-width: 768px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .hero-text {
+        width: 50%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .graphic {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 50%;
+        height: 428px;
+
+    }
 }
+
 
 
