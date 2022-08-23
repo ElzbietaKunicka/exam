@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, hgroup,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a {
+header, footer {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
@@ -100,7 +100,7 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
 }
 
 @media screen and (min-width: 768px) {
-  header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a {
+  header, footer {
     padding-left: 8rem;
     padding-right: 8rem;
   }
@@ -158,7 +158,7 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
   font-size: 4.8rem;
 }
 
-.paragraf, .copyright, .upsell_text .copyright, .showcase_text .copyright, .footer_links a, .upsell_text .footer_links a, .footer_links .upsell_text a, .showcase_text .footer_links a, .footer_links .showcase_text a, .showcase_text .paragraf, .upsell_text .paragraf {
+.paragraf, .copyright, .upsell_text .copyright, .footer_links a, .upsell_text .footer_links a, .footer_links .upsell_text a, .upsell_text .paragraf {
   color: #555555;
   font-size: 2rem;
   line-height: 150%;
@@ -214,7 +214,7 @@ img {
   padding-top: 12rem;
 }
 
-.upsell_heading {
+.upsell_heading, .showcase_heading {
   color: #111111;
   font-size: 4rem;
   font-weight: 500;
@@ -310,9 +310,18 @@ img {
     overflow: hidden;
   }
 }
-.showcase_text .paragraf, .showcase_text .copyright, .showcase_text .footer_links a, .footer_links .showcase_text a {
-  padding-top: 2rem;
+.showcase_text {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
   padding-bottom: 4rem;
+}
+
+.showcase_paragraf {
+  color: #555555;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  padding-bottom: 30px;
 }
 
 span {
@@ -320,7 +329,7 @@ span {
 }
 
 .card {
-  min-width: 29rem;
+  width: 29rem;
   max-height: 40rem;
   text-align: center;
   padding-left: 3.2rem;
@@ -336,24 +345,37 @@ span {
   background-color: #EEEEEE;
 }
 
-.group {
+.group_right {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
 }
 
-.left {
+.group_left {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.diamond {
+  width: 13px;
+  height: 22px;
+}
+
+.group_left {
   text-align: left;
 }
 
-.right {
+.group_right {
   text-align: right;
 }
 
 .small_text {
-  font-size: 1.2rem;
+  font-size: 0.7rem;
   color: #777777;
   font-weight: 500;
   text-transform: uppercase;
@@ -381,8 +403,31 @@ span {
   position: relative;
   touch-action: auto;
   gap: 1.2rem;
+  padding-bottom: 84px;
 }
 
+@media screen and (min-width: 768px) {
+  .slide_card {
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    gap: 1.2rem;
+    padding-bottom: 110px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .slide_card {
+    display: flex;
+    gap: 5px;
+  }
+  .card {
+    width: 29rem;
+    height: 40rem;
+    text-align: center;
+    padding-left: 3.2rem;
+  }
+}
 .footer-upsell {
   padding-top: 6.4rem;
   height: 53.8rem;
@@ -430,7 +475,7 @@ span {
 .divider {
   background-color: #EEEEEE;
   height: 2px;
-  margin-top: 9rem;
+  padding-top: 9rem;
 }
 
 .third {
