@@ -129,29 +129,18 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
 }
 .hero {
   padding-left: 3.2rem;
-  padding-bottom: 2.4rem;
   display: grid;
-  grid-template-columns: 69% 31%;
-  justify-content: flex-start;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .hero-text, .footer_upsell-text {
   width: 100%;
   padding-top: 8rem;
   grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.graphic {
-  width: 100%;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  padding-left: 0rem;
-  height: 55rem;
-  align-self: flex-end;
+  grid-column-end: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .launching_soon {
@@ -159,16 +148,13 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  font-size: 1.6rem;
 }
 
-/*width: 27.4rem; */
 .hero_heading, .ft_upsell_heading {
   font-weight: 900;
   color: #111111;
   font-size: 4.8rem;
-  text-align: left;
-  padding-top: 3rem;
-  line-height: 120%;
 }
 
 .paragraf, .copyright, .upsell .copyright, .showcase_text .copyright, .footer_links a, .upsell .footer_links a, .footer_links .upsell a, .showcase_text .footer_links a, .footer_links .showcase_text a, .showcase_text .paragraf, .upsell .paragraf {
@@ -176,25 +162,42 @@ header, footer, .showcase_text .paragraf, .showcase_text .copyright, .showcase_t
   font-size: 2rem;
   line-height: 150%;
   font-weight: 400;
-  text-align: left;
-  padding-top: 3.4rem;
+}
+
+.hero_right_side {
+  grid-column-start: 10;
+  grid-column-end: 13;
+  float: right;
+  padding-top: 3rem;
+}
+
+img {
+  width: 10rem;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
   .hero-text, .footer_upsell-text {
-    width: 50%;
+    width: 100%;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 8;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
   }
-  .graphic {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 50%;
-    height: 428px;
+  .hero_right_side {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    float: right;
+    padding-top: 6rem;
+    overflow: scroll;
+  }
+  img {
+    width: 30rem;
+    height: auto;
   }
 }
 .upsell {
@@ -529,7 +532,6 @@ h3 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   height: 75px;
-  margin-top: 3.2rem;
   padding: 4px;
   position: relative;
   text-decoration: none;
