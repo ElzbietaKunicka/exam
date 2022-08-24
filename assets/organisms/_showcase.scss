@@ -6,8 +6,8 @@
 }
 .showcase_heading {
     @extend .upsell_heading;
-
 }
+
 .showcase_paragraf{
     color: $color-dark2;
     font-size: 20px;
@@ -19,11 +19,23 @@ span {
     text-decoration: underline;
 }
 // card
+
+.slide_cards {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    touch-action: auto;
+    gap: 4rem;
+    padding-bottom: 84px;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
 .card {
-    width: 29rem;
+    min-width: 29rem;
     max-height: 40rem;
-    text-align: center;
-    padding-left: 3.2rem;  
+    text-align: center;  
 }
 
 .card_info {
@@ -42,6 +54,7 @@ span {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
     align-items: center;
+    
 }
 
 .group_left{
@@ -65,7 +78,7 @@ span {
 }
 
 .small_text {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     color: $color-dark3;
     font-weight: 500;
     text-transform: uppercase;
@@ -86,37 +99,24 @@ span {
     font-size: 1.8rem;
 }
 
-//slide
-.slide_card {
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    position: relative;
-    touch-action: auto;
-    gap: 1.2rem;
-    padding-bottom: 84px;
-}
+
 
 @media screen and (min-width: 768px) {
-    .slide_card {
-        position: relative;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        display: flex;
-        gap: 1.2rem;
+    .slide_cards {
         padding-bottom: 110px;
+       
+
     }
 }
 @media screen and (min-width: 1100px) {
-    .slide_card {
-        display: flex;
-        gap: 5px;
+    .slide_cards {
+       display: flex;
+       justify-content: space-between;
+       padding-left: 8rem;
+       padding-right: 8rem;
     }
-    .card {
-        width: 29rem;
-       height: 40rem;
-        text-align: center;
-        padding-left: 3.2rem;  
+    .showcase_text{
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
-
 }

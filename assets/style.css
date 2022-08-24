@@ -296,6 +296,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .press {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
   .companies {
     display: flex;
     justify-content: space-between;
@@ -304,7 +308,7 @@ img {
   .comp_Desk {
     width: 100%;
   }
-  .hidde img {
+  .hidden img {
     width: auto;
     height: auto;
     overflow: hidden;
@@ -328,11 +332,22 @@ span {
   text-decoration: underline;
 }
 
+.slide_cards {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  touch-action: auto;
+  gap: 4rem;
+  padding-bottom: 84px;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
 .card {
-  width: 29rem;
+  min-width: 29rem;
   max-height: 40rem;
   text-align: center;
-  padding-left: 3.2rem;
 }
 
 .card_info {
@@ -375,7 +390,7 @@ span {
 }
 
 .small_text {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   color: #777777;
   font-weight: 500;
   text-transform: uppercase;
@@ -396,36 +411,21 @@ span {
   font-size: 1.8rem;
 }
 
-.slide_card {
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  position: relative;
-  touch-action: auto;
-  gap: 1.2rem;
-  padding-bottom: 84px;
-}
-
 @media screen and (min-width: 768px) {
-  .slide_card {
-    position: relative;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    display: flex;
-    gap: 1.2rem;
+  .slide_cards {
     padding-bottom: 110px;
   }
 }
 @media screen and (min-width: 1100px) {
-  .slide_card {
+  .slide_cards {
     display: flex;
-    gap: 5px;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
-  .card {
-    width: 29rem;
-    height: 40rem;
-    text-align: center;
-    padding-left: 3.2rem;
+  .showcase_text {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 .footer-upsell {

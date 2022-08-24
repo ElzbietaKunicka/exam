@@ -47,17 +47,22 @@
     overflow: hidden;
 }
 @media screen and (min-width: 768px) {
+    .press {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
     .companies {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
+
     }
     .comp_Desk{
         width: 100%;
     }
-    .hidde img{
+    .hidden img{
         width: auto;
         height: auto;
-        overflow: hidden;
+        overflow:hidden;
     }
 }
