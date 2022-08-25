@@ -1,19 +1,41 @@
 .hero {
     padding-bottom: 8rem;
     padding-left: 3.2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .hero-text {
-    width: 100%;
-    padding-top: 8rem;
-    grid-column-start: 1;
-    grid-column-end: 9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 4rem;
+    
+    background-image: url(/assets/organisms/atoms/Ellipse\ 9.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top; 
+}
+.hero_left_side {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.4rem;
+    grid-column-start: 1;
+    grid-column-end: 10;
 }
+
+.hero_right_side {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+
+ .hero_right_image {
+    width: 100px;
+    height: 278px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    align-items: flex-end;
+ }
 
 .launching_soon {
     color: $color-pink;
@@ -21,12 +43,16 @@
     letter-spacing: 1.4px;
     text-transform: uppercase;  
     font-size: 1.6rem;
+    padding-top: 4rem;
 }
 
 .hero_heading {
     font-weight: 900;
     color: $color-dark1;
     font-size: 4.8rem;
+    line-height: 5.8rem;
+    
+
 }
 
 .paragraf {
@@ -34,13 +60,9 @@
     font-size: 2rem;
     line-height: 150%;
     font-weight: 400;
+    padding-bottom: 1rem;
 }
-.hero_right_side {
-    grid-column-start: 10;
-    grid-column-end: 13;
-    float: right;
-    padding-top: 3rem; 
-}
+
 
 
 @media screen and (min-width: 768px) {
