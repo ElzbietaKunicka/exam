@@ -42,27 +42,23 @@
                 </div>
                 <div class="hero_heading">
                     <h1>
-                        An NFT like<br>
-                        no other
+                        An NFT like no other
                     </h1>          
                 </div>
                 <p class="paragraf">
-                    Don’t miss out on the <br>
-                    release of our new NFT. Sign <br>
-                    up below to receive updates <br>
-                    when we go live.
+                    Don’t miss out on the release of our new NFT. Sign 
+                    up below to receive updates when we go live.
                 </p>
                 <a class="btn" href="#">
                     <span>Sing Up</span>
                 </a>
-
             </div>
-            <div class="hero_right_side" >
-                <img src="graphic.png" class="hero_right_image">
-            </div>
+            
+            <picture class="hero_right_side" >
+                <source media="(min-width: 900px)" srcset="graphic_desk.svg" class="hero_right_desk_image">
+                <img src="/assets/organisms/atoms/graphic.png" class="hero_right_image" style="width:auto;">
+            </picture>
         </div>
-
-        
 
     </section>   
     <section class="upsell">
@@ -78,20 +74,34 @@
 
     <section class="press">
         <div class="companies">
-            <a href="#">
-                <img src="./assets/organisms/atoms/boomerang.svg" alt="Boomerang logo" class="comp_Desk"> 
+            <a href="#" >
+                <img src="./assets/organisms/atoms/boomerang.svg" alt="Boomerang logo" class="comp_Desk" class="item_1"> 
+            </a>
+            <a href="#" >
+                <img src="./assets/organisms/atoms/blimp.svg" alt="Blimp logo" class="comp_Desk" class="item_2"> 
             </a>
             <a href="#">
-                <img src="./assets/organisms/atoms/blimp.svg" alt="Blimp logo" class="comp_Desk"> 
+                <img src="./assets/organisms/atoms/qrco.svg" alt="Qrco logo" class="comp_Desk" class="item_3" > 
             </a>
             <a href="#">
-                <img src="./assets/organisms/atoms/qrco.svg" alt="Qrco logo" class="comp_Desk"> 
+                <img src="./assets/organisms/atoms/droplet.svg" alt="Droplet logo" class="comp_Desk" > 
             </a>
-            <a href="#">
-                <img src="./assets/organisms/atoms/droplet.svg" alt="Droplet logo" class="comp_Desk"> 
+        </div>
+        <div class="companies_desktop">
+            <a href="#" style="order: 1">
+                <img src="./assets/organisms/atoms/boomerang_desktop.svg" alt="Boomerang logo" class="comp_Desk" class="item_1"> 
             </a>
-            <a href="#" class="hidden">
-                <img src="./assets/organisms/atoms/opendoor.svg" alt="OpenDoorlogo" class="comp_Desk"> 
+            <a href="#" style="order: 2">
+                <img src="./assets/organisms/atoms/blimp.svg" alt="Blimp logo" class="comp_Desk" class="item_2"> 
+            </a>
+            <a href="#" style="order: 3">
+                <img src="./assets/organisms/atoms/qrco.svg" alt="Qrco logo" class="comp_Desk" class="item_3" > 
+            </a>
+            <a href="#" style="order: 5">
+                <img src="./assets/organisms/atoms/droplet.svg" alt="Droplet logo" class="comp_Desk" > 
+            </a>
+            <a href="#"  style="order: 4">
+                <img src="./assets/organisms/atoms/opendoor.svg" alt="OpenDoorlogo" class="comp_Desk" > 
             </a>
         </div>
     </section>

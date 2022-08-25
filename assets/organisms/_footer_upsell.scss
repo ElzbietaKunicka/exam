@@ -12,11 +12,11 @@
     padding-left: 3.2rem;
     width: 100%;
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 8;
     display: flex;
     flex-direction: column;
     padding-bottom: 6rem;
-    gap: 2.7rem;      
+    gap: 2.7rem;     
 }
 
 .footer-launching_soon {
@@ -29,7 +29,8 @@
     line-height: 6.6rem;
 }
 .upsell_paragraf {
-    @extend .paragraf;   
+    @extend .paragraf;  
+    padding-right: 4rem; 
 }
 
 @media screen and (min-width: 768px) {
