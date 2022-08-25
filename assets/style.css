@@ -492,6 +492,7 @@ header, footer {
     justify-content: space-between;
     padding-left: 8rem;
     padding-right: 8rem;
+    gap: 4rem;
   }
   .showcase_text {
     padding-left: 8rem;
@@ -504,7 +505,7 @@ header, footer {
   background-image: url(/assets/organisms/atoms/upsell-footer-image.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 206px 467px;
+  background-size: 20.6rem 46.7rem;
   gap: 1.6rem;
 }
 
@@ -537,7 +538,29 @@ header, footer {
     padding-right: 8rem;
   }
   .footer-upsell-conteiner {
-    background-position: 78% 100%;
+    background-position: 99% 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .footer_upsell-text {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .footer-upsell-conteiner {
+    background-position: 90% 100%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .footer_upsell-text {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .footer-upsell-conteiner {
+    background-position: 85% 100%;
   }
 }
 .divider {
@@ -567,11 +590,6 @@ footer {
 .social {
   display: flex;
   gap: 1.6rem;
-}
-
-.social_icon {
-  width: 1.8rem;
-  height: 1.8rem;
 }
 
 .footer_right_conteiner {
@@ -645,16 +663,46 @@ h3 {
 @media screen and (min-width: 768px) {
   .footer_bottom_right {
     height: auto;
+    width: auto;
   }
   .footer_bottom {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
   .footer_right_conteiner {
     display: flex;
     gap: 3.8rem;
     padding-bottom: 10rem;
     padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .footer_right_conteiner {
+    padding-top: 15rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .footer_side_conteiner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12rem;
+  }
+  .footer_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer_right_conteiner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 0px;
+  }
+  .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {

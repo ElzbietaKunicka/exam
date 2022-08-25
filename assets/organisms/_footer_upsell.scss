@@ -4,7 +4,7 @@
     background-image: url(/assets/organisms/atoms/upsell-footer-image.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 206px 467px ; 
+    background-size: 20.6rem 46.7rem ; 
     gap: 1.6rem;
 }
 .footer_upsell-text {
@@ -22,7 +22,6 @@
 .footer-launching_soon {
     @extend .launching_soon;
 }
-
 .ft_upsell_heading {
     @extend .hero_heading;
     font-size: 5.6rem;
@@ -41,6 +40,30 @@
         padding-right: 8rem;
     }
     .footer-upsell-conteiner {
-        background-position: 78% 100%;
+        background-position: 99% 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footer_upsell-text {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .footer-upsell-conteiner {
+        background-position: 90% 100%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .footer_upsell-text {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .footer-upsell-conteiner {
+        background-position: 85% 100%;
     }
 }

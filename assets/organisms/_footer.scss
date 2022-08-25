@@ -3,7 +3,6 @@ footer {
     padding-top: 6.2rem;
     padding-bottom: 10rem;
 }
-//footer left
 .footer_left {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -11,26 +10,16 @@ footer {
     padding-bottom: 5.4rem;
     align-items: center;
 }
-
-//social
 .social {
     display: flex;
     gap: 1.6rem; 
 }
-.social_icon {
-    width: 1.8rem;
-    height: 1.8rem;
-}
-
-//footer right
 .footer_right_conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 50% 50%;
     gap: 2.8rem;
-  
 }
-
 div.child_first {
     width: 100%;
     grid-column-start: 1;
@@ -58,7 +47,6 @@ div.child_fourth {
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
 h3{
     font-weight: 700;
     font-size: 1.6rem;
@@ -67,11 +55,9 @@ h3{
     padding-bottom: 2.2rem;
     text-transform: uppercase;
 }
-
 .footer_links {
     display: flex;
     flex-direction: column;
-   
 }
 .footer_links a {
     @extend .paragraf;
@@ -85,10 +71,9 @@ h3{
     color: $color-dark4;
     padding-top: 4rem;
 }
-
 .footer_bottom_right {
     @extend.copyright;
-    height :0;
+    height: 0;
     width: 0;
     overflow: hidden;
 }
@@ -96,20 +81,51 @@ h3{
 @media screen and (min-width: 768px) {
     .footer_bottom_right {
         height: auto;
+        width: auto;
     }
     .footer_bottom {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
-   
     .footer_right_conteiner {
         display: flex;
         gap: 3.8rem;
         padding-bottom: 10rem;
         padding-top: 5rem;
-        
     }
 }
+
+@media screen and (min-width: 800px) {
+    .footer_right_conteiner {
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .footer_side_conteiner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 12rem;
+    }
+    .footer_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_right_conteiner {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;  
+        padding-top: 0px;
+    }
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .footer_side_conteiner {
         display: flex;
@@ -119,9 +135,7 @@ h3{
     .footer_right_conteiner {
         display: flex;
         justify-content: space-between;
-        gap: 7rem;
-        
+        gap: 7rem;  
     }
-
 }
 
