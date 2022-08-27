@@ -64,7 +64,9 @@ h3{
     text-decoration: none;
     word-spacing: 1.6rem;
 }
-
+.social_icon:hover {
+    width: 3rem;
+}
 //copyright
 .copyright {
     @extend .paragraf;

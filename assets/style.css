@@ -94,7 +94,7 @@ header, footer {
 .active {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.4rem;
 }
 
 .active:hover {
@@ -187,8 +187,8 @@ header, footer {
 }
 
 .hero_right_image {
-  width: 100px;
-  height: 278px;
+  width: 10rem;
+  height: 27.8rem;
   grid-column-start: 2;
   grid-column-end: 2;
   align-items: flex-end;
@@ -197,7 +197,7 @@ header, footer {
 .launching_soon, .footer-launching_soon {
   color: #FF3998;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.14rem;
   text-transform: uppercase;
   font-size: 1.6rem;
   padding-top: 4rem;
@@ -216,7 +216,7 @@ header, footer {
   line-height: 150%;
   font-weight: 400;
   padding-bottom: 1rem;
-  padding-right: 23px;
+  padding-right: 2.3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -290,8 +290,8 @@ header, footer {
     padding-left: 8rem;
     padding-right: 8rem;
     background-size: contain;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
     padding-bottom: 4rem;
     padding-top: 2rem;
   }
@@ -409,7 +409,7 @@ header, footer {
 
 .showcase_paragraf {
   color: #555555;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 150%;
   font-weight: 400;
   padding-bottom: 2.4rem;
@@ -663,6 +663,10 @@ h3 {
 .footer_links a {
   text-decoration: none;
   word-spacing: 1.6rem;
+}
+
+.social_icon:hover {
+  width: 3rem;
 }
 
 .copyright, .footer_bottom_right {

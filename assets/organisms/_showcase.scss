@@ -1,6 +1,6 @@
 //section text
 .showcase_text{
-    padding-left:3.2rem;
+    padding-left: 3.2rem;
     padding-right: 3.2rem;
     padding-bottom: 2rem;
 }
@@ -10,12 +10,11 @@
 }
 .showcase_paragraf{
     color: $color-dark2;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 150%;
     font-weight: 400;
     padding-bottom: 2.4rem;
 }
-
 // card
 .slide_cards {
     display: flex;
@@ -87,8 +86,7 @@
 
 @media screen and (min-width: 768px) {
     .slide_cards {
-        padding-bottom: 12rem;
-        
+        padding-bottom: 12rem;  
     }
     span {
         text-decoration: underline;

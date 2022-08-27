@@ -25,15 +25,15 @@ header {
     width: 0;
     display: flex;
     gap: 1rem;
- }
+}
  .right_side {
     display: flex;
     justify-content: space-between;
- }
+}
  .active {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.4rem;
 }
 .active:hover {
     background-color: $color-pink;
