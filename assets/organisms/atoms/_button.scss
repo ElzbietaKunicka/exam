@@ -25,8 +25,10 @@
 	width: 188px;
 	z-index: 2; 
 }
-  
-
+.btn:active {
+  color : $color-dark4;
+  font-size: 1.6rem;
+}
 
 
 

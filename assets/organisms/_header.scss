@@ -11,9 +11,13 @@ header {
     color: $color-dark2;
     text-decoration: none; 
 }
- .link_one span {
+.link_one span {
     color: $color-pink;
     text-decoration: none;  
+}
+.link_one span:hover {
+    background-color: $color-pink;
+    color: $color-light1;
 }
 .nav_links {
     overflow: hidden;
@@ -31,7 +35,15 @@ header {
     flex-direction: column;
     gap: 4px;
 }
-
+.active:hover {
+    background-color: $color-pink;
+    cursor: pointer; 
+}
+.link_one:hover {
+    background-color: $color-pink;
+    color: $color-light1;
+    cursor: pointer;
+}
 //menu line
 .menu-line1 {
     width: 2.4rem;

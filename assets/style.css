@@ -73,6 +73,11 @@ header, footer {
   text-decoration: none;
 }
 
+.link_one span:hover {
+  background-color: #FF3998;
+  color: #FFFFFF;
+}
+
 .nav_links {
   overflow: hidden;
   height: 0;
@@ -90,6 +95,17 @@ header, footer {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.active:hover {
+  background-color: #FF3998;
+  cursor: pointer;
+}
+
+.link_one:hover {
+  background-color: #FF3998;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .menu-line1, .menu-line3, .menu-line2 {
@@ -743,6 +759,11 @@ h3 {
   text-decoration: none;
   width: 188px;
   z-index: 2;
+}
+
+.btn:active {
+  color: #999999;
+  font-size: 1.6rem;
 }
 
 html {
