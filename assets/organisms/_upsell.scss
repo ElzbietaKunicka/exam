@@ -1,0 +1,40 @@
+.upsell {
+    background-color: $color-red;
+    background-image: linear-gradient(65deg, #FF3998, #FF3939, #FF8139, #39FFA0);
+    background-size: cover;
+}
+.upsell_text {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-top: 12rem;  
+}
+.upsell_heading {
+    color: $color-dark1;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.8rem;
+    padding-bottom: 2.2rem;
+}
+.upsell_text .paragraf {
+    padding-bottom: 3rem;
+    @extend .paragraf;  
+}
+
+@media screen and (min-width: 768px) {
+    .upsell {
+        border-radius: 1.6rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        background-size: contain;
+        border-left: 0.1rem solid transparent;
+        border-right: 0.1rem solid transparent;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+    }
+    .upsell_text {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        text-align: left;
+    }
+}   
+

@@ -1,0 +1,68 @@
+.footer-upsell-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url(/assets/organisms/atoms/upsell-footer-image.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20.6rem 46.7rem ; 
+    gap: 1.6rem;
+}
+.footer_upsell-text {
+    padding-top: 2.4rem;
+    padding-left: 3.2rem;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+    gap: 2.7rem;     
+}
+.footer-launching_soon {
+    @extend .launching_soon;
+}
+.ft_upsell_heading {
+    @extend .hero_heading;
+    font-size: 5.6rem;
+    line-height: 6.6rem;
+}
+.upsell_paragraf {
+    @extend .paragraf;  
+    padding-right: 4rem; 
+}
+
+@media screen and (min-width: 768px) {
+    .footer_upsell-text {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .footer-upsell-conteiner {
+        background-position: 99% 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footer_upsell-text {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .footer-upsell-conteiner {
+        background-position: 90% 100%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .footer_upsell-text {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .footer-upsell-conteiner {
+        background-position: 85% 100%;
+    }
+}

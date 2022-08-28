@@ -1,15 +1,30 @@
+// base styles
 @import "./base/reset";
 @import "./base/variables";
+
+//Organisms
+@import "./organisms/header";
+@import "./organisms/hero";
+@import "./organisms/upsell";
+@import "./organisms/press";
+@import "./organisms/showcase";
+@import "./organisms/footer_upsell";
+@import "./organisms/divider";
+@import "./organisms/footer";
+
+//atoms
+@import "./organisms/atoms/button";
+@import "./organisms/atoms/image";
 
 
 html {
     font-size: 62.5%;
-    width: 428px;
 }
 
-
-body{
+body {
     font-family: $font-main;
     color: $color-light1;
     font-size: 1.6rem; 
+    margin-top: 3.2rem;   
+    
 }

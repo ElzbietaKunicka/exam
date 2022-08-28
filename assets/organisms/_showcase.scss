@@ -1,0 +1,107 @@
+//section text
+.showcase_text{
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-bottom: 2rem;
+}
+.showcase_heading {
+    @extend .upsell_heading;
+    padding-bottom: 1.6rem;
+}
+.showcase_paragraf{
+    color: $color-dark2;
+    font-size: 2rem;
+    line-height: 150%;
+    font-weight: 400;
+    padding-bottom: 2.4rem;
+}
+// card
+.slide_cards {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    touch-action: auto;
+    gap: 4rem;
+    padding-bottom: 9rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+.card {
+    min-width: 29rem;
+    max-height: 40rem;
+    text-align: center;  
+}
+.card_info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    padding: 1.8rem;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    background-color: $color-light2;  
+}
+.group_right {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.6rem;
+    align-items: center;
+}
+.group_left{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.6rem;
+    align-items: center;
+} 
+.diamond {
+    width: 13px;
+    height: 22px;
+}
+.group_left {
+    text-align: left;  
+}
+.group_right {
+    text-align: right;  
+}
+.small_text {
+    font-size: 1.2rem;
+    color: $color-dark3;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.orange {
+    color: $color-orange;
+}
+.NFT_name {
+    font-weight: 500;
+    font-size: 2rem;
+    color: $color-dark1;
+}
+.NFT_id {
+    color: $color-dark3;
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .slide_cards {
+        padding-bottom: 12rem;  
+    }
+    span {
+        text-decoration: underline;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .slide_cards {
+       display: flex;
+       justify-content: space-between;
+       padding-left: 8rem;
+       padding-right: 8rem;
+       gap: 4rem
+    }
+    .showcase_text{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
